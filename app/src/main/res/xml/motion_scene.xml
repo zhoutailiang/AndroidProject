@@ -9,7 +9,9 @@
         <OnClick
             app:clickAction="toggle"
             app:targetId="@id/image"/>
-
+        <OnSwipe
+            app:touchAnchorId="@id/image"
+            app:dragDirection="dragUp"/>
     </Transition>
 
 
