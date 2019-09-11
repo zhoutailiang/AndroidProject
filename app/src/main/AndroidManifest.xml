@@ -23,6 +23,7 @@
         <activity android:name=".ConstraintLayoutActivity"/>
         <activity android:name=".MotionLayoutActivity"/>
         <activity android:name=".MotionLayoutConstraintSetActivity"/>
+        <activity android:name=".KeyFrameActivity"/>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private View mMotionLayout;
     private View mMotionLayoutConstraintSet;
+    private View mKeyFrame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mMotionLayout = findViewById(R.id.tv_motion_layout);
         mMotionLayoutConstraintSet = findViewById(R.id.tv_motion_layout_constraint_set);
+        mKeyFrame = findViewById(R.id.tv_key_frame);
         mMotionLayout.setOnClickListener(this);
         mMotionLayoutConstraintSet.setOnClickListener(this);
+        mKeyFrame.setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_motion_layout_constraint_set:
                 startPage(MotionLayoutConstraintSetActivity.class);
+                break;
+            case R.id.tv_key_frame:
+                startPage(KeyFrameActivity.class);
                 break;
         }
     }
