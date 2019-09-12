@@ -28,4 +28,20 @@
         android:layout_height="wrap_content"
         android:text="KeyFrame"
         android:textSize="24sp"/>
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_text_dance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextDance"
+        android:textSize="24sp"/>
 </LinearLayout>

@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mMotionLayout.setOnClickListener(this);
         mMotionLayoutConstraintSet.setOnClickListener(this);
         mKeyFrame.setOnClickListener(this);
+
+
+
+
+
+        findViewById(R.id.tv_text_dance).setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_key_frame:
                 startPage(KeyFrameActivity.class);
+                break;
+
+
+
+
+            case R.id.tv_text_dance:
+                startPage(TextDanceActivity.class);
                 break;
         }
     }
