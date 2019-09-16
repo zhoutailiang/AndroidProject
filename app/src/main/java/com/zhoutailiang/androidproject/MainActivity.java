@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         findViewById(R.id.tv_text_dance).setOnClickListener(this);
+        findViewById(R.id.tv_object_animator).setOnClickListener(this);
+        findViewById(R.id.tv_transition_animation).setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_text_dance:
                 startPage(TextDanceActivity.class);
                 break;
+
+            case R.id.tv_transition_animation:
+                startPage(TransitionAnimationActivity.class);
+                break;
+
+
+
         }
     }
 

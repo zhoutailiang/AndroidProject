@@ -44,4 +44,20 @@
         android:layout_height="wrap_content"
         android:text="TextDance"
         android:textSize="24sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_object_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ObjectAnimator"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_transition_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TransitionAnimation"
+        android:textSize="24sp"/>
 </LinearLayout>

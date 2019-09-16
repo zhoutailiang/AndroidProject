@@ -11,8 +11,6 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </Constraint>
@@ -66,11 +64,12 @@
                 app:customColorValue="@color/colorPrimary" />
 
             <Layout
+                app:layout_constraintHorizontal_chainStyle="packed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/e"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </Constraint>
 
@@ -80,11 +79,12 @@
                 app:customColorValue="@color/colorAccent" />
 
             <Layout
+                android:layout_marginStart="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/x"
+                app:layout_constraintStart_toEndOf="@id/t1"
                 app:layout_constraintTop_toTopOf="parent" />
         </Constraint>
 
@@ -94,15 +94,30 @@
                 app:customColorValue="@color/colorPrimaryDark" />
 
             <Layout
+                android:layout_marginStart="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t2"
                 app:layout_constraintStart_toEndOf="@id/e"
                 app:layout_constraintTop_toTopOf="parent" />
         </Constraint>
-    </ConstraintSet>
 
+        <Constraint android:id="@+id/t2">
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="#FF0000" />
+
+            <Layout
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/x"
+                app:layout_constraintTop_toTopOf="parent" />
+        </Constraint>
+    </ConstraintSet>
 
 
     <Transition

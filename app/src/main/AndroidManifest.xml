@@ -23,6 +23,8 @@
         <activity android:name=".MotionLayoutConstraintSetActivity" />
         <activity android:name=".KeyFrameActivity" />
         <activity android:name=".TextDanceActivity" />
+        <activity android:name=".ObjectAnimatorActivity" />
+        <activity android:name=".TransitionAnimationActivity" />
     </application>
 
     <dist:module dist:instant="true" />
