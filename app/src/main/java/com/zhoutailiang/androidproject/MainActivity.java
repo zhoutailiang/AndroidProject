@@ -7,20 +7,11 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private View mMotionLayout;
-    private View mMotionLayoutConstraintSet;
-    private View mKeyFrame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMotionLayout = findViewById(R.id.tv_motion_layout);
-        mMotionLayoutConstraintSet = findViewById(R.id.tv_motion_layout_constraint_set);
-        mKeyFrame = findViewById(R.id.tv_key_frame);
-        mMotionLayout.setOnClickListener(this);
-        mMotionLayoutConstraintSet.setOnClickListener(this);
-        mKeyFrame.setOnClickListener(this);
 
 
         findViewById(R.id.tv_text_dance).setOnClickListener(this);
@@ -29,6 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_transition_animation).setOnClickListener(this);
         findViewById(R.id.tv_begin_animation).setOnClickListener(this);
         findViewById(R.id.tv_go_animation).setOnClickListener(this);
+        findViewById(R.id.tv_motion_layout).setOnClickListener(this);
+        findViewById(R.id.tv_motion_layout_constraint_set).setOnClickListener(this);
+        findViewById(R.id.tv_key_frame).setOnClickListener(this);
+        findViewById(R.id.tv_arc_motion).setOnClickListener(this);
     }
 
     @Override
@@ -44,8 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_key_frame:
                 startPage(KeyFrameActivity.class);
                 break;
-
-
             case R.id.tv_text_dance:
                 startPage(TextDanceActivity.class);
                 break;
@@ -58,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_go_animation:
                 startPage(GoAnimationActivity.class);
+                break;
+            case R.id.tv_arc_motion:
+                startPage(ArcMotionActivity.class);
                 break;
         }
     }

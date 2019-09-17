@@ -1,6 +1,8 @@
 package com.zhoutailiang.androidproject;
 
 import android.os.Bundle;
+import android.transition.Scene;
+import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -8,8 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.transition.Scene;
-import androidx.transition.TransitionManager;
 
 public class GoAnimationActivity extends AppCompatActivity implements View.OnClickListener {
     private boolean mToggle = true;

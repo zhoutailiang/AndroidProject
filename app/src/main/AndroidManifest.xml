@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".MotionLayoutActivity" />
         <activity android:name=".MotionLayoutConstraintSetActivity" />
@@ -27,6 +28,13 @@
         <activity android:name=".TransitionAnimationActivity" />
         <activity android:name=".BeginAnimationActivity" />
         <activity android:name=".GoAnimationActivity" />
+=======
+        <activity android:name=".ConstraintLayoutActivity"/>
+        <activity android:name=".MotionLayoutActivity"/>
+        <activity android:name=".MotionLayoutConstraintSetActivity"/>
+        <activity android:name=".KeyFrameActivity"/>
+        <activity android:name=".ArcMotionActivity"/>
+>>>>>>> add arc motion
     </application>
 
     <dist:module dist:instant="true" />
