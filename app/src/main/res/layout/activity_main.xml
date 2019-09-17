@@ -60,4 +60,20 @@
         android:layout_height="wrap_content"
         android:text="TransitionAnimation"
         android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv_begin_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BeginAnimation"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv_go_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GoAnimation"
+        android:textSize="24sp"/>
+
+
 </LinearLayout>
