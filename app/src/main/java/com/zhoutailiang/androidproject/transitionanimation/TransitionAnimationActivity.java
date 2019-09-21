@@ -1,4 +1,4 @@
-package com.zhoutailiang.androidproject;
+package com.zhoutailiang.androidproject.transitionanimation;
 
 import android.os.Bundle;
 import android.transition.TransitionManager;
@@ -6,6 +6,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
+import com.zhoutailiang.androidproject.R;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

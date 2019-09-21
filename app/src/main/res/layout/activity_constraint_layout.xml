@@ -38,4 +38,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="昵称"/>
+    <!--3. match_parent和match_constraint区别-->
+    <ImageView
+        android:id="@+id/iv_avatar1"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:text="texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext"
+        android:id="@+id/view1"
+        app:layout_constraintLeft_toRightOf="@id/iv_avatar1"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar1"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#00FF00"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_launcher_background"/>
+    <!--4. Chain，实现LinearLayout类似的均分布局-->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/text2"
+        android:background="#FF0000"
+        android:text="Text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar1" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:text="Text2"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintRight_toLeftOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar1" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:text="Text3"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar1"
+        app:layout_constraintRight_toRightOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

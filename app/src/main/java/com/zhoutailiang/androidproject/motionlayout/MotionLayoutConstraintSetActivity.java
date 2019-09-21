@@ -1,6 +1,8 @@
-package com.zhoutailiang.androidproject;
+package com.zhoutailiang.androidproject.motionlayout;
 
 import android.os.Bundle;
+
+import com.zhoutailiang.androidproject.R;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

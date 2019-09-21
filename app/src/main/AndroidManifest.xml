@@ -18,23 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".ConstraintLayoutActivity" />
-        <activity android:name=".MotionLayoutActivity" />
-        <activity android:name=".MotionLayoutConstraintSetActivity" />
-        <activity android:name=".KeyFrameActivity" />
+        <activity android:name=".constraintlayout.ConstraintLayoutActivity" />
+        <activity android:name=".motionlayout.MotionLayoutActivity" />
+        <activity android:name=".motionlayout.MotionLayoutConstraintSetActivity" />
+        <activity android:name=".motionlayout.KeyFrameActivity" />
         <activity android:name=".TextDanceActivity" />
-        <activity android:name=".ObjectAnimatorActivity" />
-        <activity android:name=".TransitionAnimationActivity" />
-        <activity android:name=".BeginAnimationActivity" />
-        <activity android:name=".GoAnimationActivity" />
-=======
-        <activity android:name=".ConstraintLayoutActivity"/>
-        <activity android:name=".MotionLayoutActivity"/>
-        <activity android:name=".MotionLayoutConstraintSetActivity"/>
-        <activity android:name=".KeyFrameActivity"/>
-        <activity android:name=".ArcMotionActivity"/>
->>>>>>> add arc motion
+        <activity android:name=".transitionanimation.ObjectAnimatorActivity" />
+        <activity android:name=".transitionanimation.TransitionAnimationActivity" />
+        <activity android:name=".transitionanimation.ConstraintSetActivity" />
+        <activity android:name=".transitionanimation.SceneAnimationActivity" />
+        <activity android:name=".motionlayout.ArcMotionActivity" />
     </application>
 
     <dist:module dist:instant="true" />

@@ -1,4 +1,4 @@
-package com.zhoutailiang.androidproject;
+package com.zhoutailiang.androidproject.transitionanimation;
 
 import android.os.Bundle;
 import android.transition.Scene;
@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.zhoutailiang.androidproject.R;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class GoAnimationActivity extends AppCompatActivity implements View.OnClickListener {
+public class SceneAnimationActivity extends AppCompatActivity implements View.OnClickListener {
     private boolean mToggle = true;
 
     @Override

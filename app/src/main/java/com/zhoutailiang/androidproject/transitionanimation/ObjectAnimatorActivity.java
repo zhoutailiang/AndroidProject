@@ -1,7 +1,9 @@
-package com.zhoutailiang.androidproject;
+package com.zhoutailiang.androidproject.transitionanimation;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.zhoutailiang.androidproject.R;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
