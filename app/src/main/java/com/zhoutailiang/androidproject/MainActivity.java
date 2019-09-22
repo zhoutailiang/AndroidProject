@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         switch (id) {
-
             case R.id.tv_cool_animation:
                 startPage(CoolAnimationActivity.class);
                 break;
@@ -76,9 +75,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_with_drawer:
                 startPage(WithDrawerActivity.class);
                 break;
-
-
-
         }
     }
 
