@@ -1,4 +1,4 @@
-package com.zhoutailiang.androidproject.motionlayout;
+package com.zhoutailiang.androidproject.example;
 
 import android.os.Bundle;
 
@@ -8,12 +8,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * Created by zhoutailiang on 2019-09-11
+ * Created by zhoutailiang on 2019-09-22
  */
-public class ArcMotionActivity extends AppCompatActivity {
+public class CoolAnimationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arc_motion);
+        setContentView(R.layout.activity_cool_animation);
     }
 }

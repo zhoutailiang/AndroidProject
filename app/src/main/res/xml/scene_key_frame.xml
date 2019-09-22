@@ -4,27 +4,27 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
         motion:duration="1000"
         motion:motionInterpolator="linear">
         <OnSwipe
+            motion:dragDirection="dragRight"
             motion:touchAnchorId="@+id/button"
-            motion:touchAnchorSide="right"
-            motion:dragDirection="dragRight" />
+            motion:touchAnchorSide="right"/>
 
         <KeyFrameSet>
             <KeyPosition
-                motion:keyPositionType="parentRelative"
-                motion:percentY="0.25"
                 motion:framePosition="50"
-                motion:motionTarget="@+id/button"/>
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/button"
+                motion:percentY="0.25"/>
             <KeyAttribute
+                android:rotation="-45"
                 android:scaleX="2"
                 android:scaleY="2"
-                android:rotation="-45"
                 motion:framePosition="50"
-                motion:motionTarget="@id/button" />
+                motion:motionTarget="@id/button"/>
 
         </KeyFrameSet>
     </Transition>
@@ -35,6 +35,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginStart="8dp"
+            motion:drawPath="asConfigured"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent">
@@ -51,8 +52,7 @@
             android:layout_height="64dp"
             android:layout_marginEnd="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+            motion:layout_constraintEnd_toEndOf="parent">
             <CustomAttribute
                 motion:attributeName="backgroundColor"
                 motion:customColorValue="#9999FF"/>

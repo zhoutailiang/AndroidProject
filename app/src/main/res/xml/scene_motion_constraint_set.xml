@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+             xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <ConstraintSet android:id="@+id/start">
@@ -12,12 +12,11 @@
             android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="parent">
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcher"/>
 
         </Constraint>
 
@@ -32,7 +31,7 @@
             <!-- 使用自定义属性 -->
             <CustomAttribute
                 app:attributeName="backgroundColor"
-                app:customColorValue="@color/colorPrimary" />
+                app:customColorValue="@color/colorPrimary"/>
         </Constraint>
 
 
@@ -52,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcher"/>
 
         </Constraint>
 
@@ -66,7 +65,7 @@
             <!-- 使用自定义属性 -->
             <CustomAttribute
                 app:attributeName="backgroundColor"
-                app:customColorValue="@color/colorAccent" />
+                app:customColorValue="@color/colorAccent"/>
         </Constraint>
     </ConstraintSet>
 
@@ -78,9 +77,9 @@
         app:duration="1000">
         <OnClick
             app:clickAction="toggle"
-            app:targetId="@id/image" />
+            app:targetId="@id/image"/>
         <OnSwipe
             app:dragDirection="dragUp"
-            app:touchAnchorId="@id/image" />
+            app:touchAnchorId="@id/image"/>
     </Transition>
 </MotionScene>

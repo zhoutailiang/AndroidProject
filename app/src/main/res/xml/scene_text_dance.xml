@@ -152,4 +152,5 @@
             app:clickAction="toggle"
             app:targetId="@id/toggle" />
     </Transition>
+
 </MotionScene>

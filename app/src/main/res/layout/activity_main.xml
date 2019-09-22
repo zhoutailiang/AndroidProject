@@ -3,53 +3,70 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
               android:orientation="vertical"
+              android:paddingLeft="16dp"
               tools:context=".MainActivity">
-
-
+    <!--1.Example-->
     <TextView
-        android:id="@+id/tv_constraint_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ConstraintLayout"
-        android:textSize="24sp"/>
-    <TextView
-        android:id="@+id/tv_motion_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MotionLayout"
-        android:textSize="24sp"/>
+        android:text="一、Example"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/tv_motion_layout_constraint_set"
+        android:id="@+id/tv_cicular_position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MotionLayoutConstraintSet"
-        android:textSize="24sp"/>
-
-
-    <TextView
-        android:id="@+id/tv_key_frame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KeyFrame"
-        android:textSize="24sp"/>
+        android:text="CicularPosition"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/tv_text_dance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextDance"
-        android:textSize="24sp"/>
+        android:textSize="20sp"/>
 
+    <TextView
+        android:id="@+id/tv_cool_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CoolAnimation"
+        android:textSize="20sp"/>
+
+    <!--2.ConstraintLayout-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="二、ConstraintLayout"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_constraint_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ConstraintLayout"
+        android:textSize="20sp"/>
+
+
+    <!--3.传统过渡动画-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="三、传统过渡动画"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tv_object_animator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ObjectAnimator"
-        android:textSize="24sp"/>
+        android:textSize="20sp"/>
 
 
     <TextView
@@ -57,27 +74,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TransitionAnimation"
-        android:textSize="24sp"/>
+        android:textSize="20sp"/>
 
     <TextView
-        android:id="@+id/tv_begin_animation"
+        android:id="@+id/tv_constraint_set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BeginAnimation"
-        android:textSize="24sp"/>
+        android:text="ConstraintSet"
+        android:textSize="20sp"/>
 
     <TextView
-        android:id="@+id/tv_go_animation"
+        android:id="@+id/tv_scene_animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GoAnimation"
-        android:textSize="24sp"/>
+        android:text="SceneAnimation"
+        android:textSize="20sp"/>
+
+
+    <!--4.MotionLayout-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="四、MotionLayout"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_motion_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MotionLayout"
+        android:textSize="20sp"/>
 
 
     <TextView
-        android:id="@+id/tv_arc_motion"
+        android:id="@+id/tv_key_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ArcMotion"
-        android:textSize="24sp"/>
+        android:text="KeyFrame"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_with_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WithDrawer"
+        android:textSize="20sp"/>
 </LinearLayout>

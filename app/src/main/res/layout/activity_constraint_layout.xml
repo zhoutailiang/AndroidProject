@@ -1,30 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <!--1. 控件相对某个控件底部对齐，传统会用-margin实现-->
-    <View
-        android:layout_marginTop="-100dp"
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+    <!--1. Barrier-->
+    <TextView
+        android:id="@+id/text4"
         android:background="#FF0000"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="AAAAA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <ImageView
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintBottom_toBottomOf="@id/view"
+    <TextView
+        android:id="@+id/text5"
+        android:text="BBBBBBBBBBBBBBBBBBB"
+        android:background="#00FF00"
+        app:layout_constraintTop_toBottomOf="@id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="text4,text5"
+        tools:layout_editor_absoluteX="166dp"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:background="#0000FF"
+        android:text="CCCCCCCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/barrier" />
+
+    <!--2. 直播的例子-->
+    <!--结束-->
+    <ImageView
+        android:src="@drawable/share_qq"
+        android:id="@+id/iv1_live"
+        app:layout_constraintTop_toBottomOf="@id/text5"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv2_live"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:text="结束"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv1_live"
+        app:layout_constraintTop_toBottomOf="@id/iv1_live"
+        app:layout_constraintRight_toRightOf="@id/iv1_live"
+        app:layout_constraintLeft_toLeftOf="@id/iv1_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--已开麦-->
+    <ImageView
+        android:src="@drawable/share_wechat"
+        android:id="@+id/iv2_live"
+        app:layout_constraintTop_toTopOf="@id/iv1_live"
+        app:layout_constraintRight_toLeftOf="@id/iv3_live"
+        app:layout_constraintLeft_toRightOf="@id/iv1_live"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:text="已开麦"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv2_live"
+        app:layout_constraintTop_toBottomOf="@id/iv2_live"
+        app:layout_constraintRight_toRightOf="@id/iv2_live"
+        app:layout_constraintLeft_toLeftOf="@id/iv2_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--通知开 -->
+    <ImageView
+        android:src="@drawable/share_wechat_friends"
+        android:id="@+id/iv3_live"
+        app:layout_constraintTop_toTopOf="@id/iv1_live"
+        app:layout_constraintLeft_toRightOf="@id/iv2_live"
+        app:layout_constraintRight_toLeftOf="@id/iv4_live"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:text="通知开"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv3_live"
+        app:layout_constraintTop_toBottomOf="@id/iv3_live"
+        app:layout_constraintRight_toRightOf="@id/iv3_live"
+        app:layout_constraintLeft_toLeftOf="@id/iv3_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--直播间-->
+    <ImageView
         app:layout_constraintRight_toRightOf="parent"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/share_weibo"
+        android:id="@+id/iv4_live"
+        app:layout_constraintTop_toTopOf="@id/iv1_live"
+        app:layout_constraintLeft_toRightOf="@id/iv3_live"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:text="直播间"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv4_live"
+        app:layout_constraintTop_toBottomOf="@id/iv4_live"
+        app:layout_constraintRight_toRightOf="@id/iv4_live"
+        app:layout_constraintLeft_toLeftOf="@id/iv4_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <!--2. 头像和昵称垂直居中对齐，传统会用嵌套一层RelativeLayout-->
     <ImageView
         android:id="@+id/iv_avatar"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toBottomOf="@id/tv1_live"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -48,7 +148,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:src="@drawable/ic_launcher_background"/>
     <TextView
-        android:text="texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext"
+        android:text="texttext"
         android:id="@+id/view1"
         app:layout_constraintLeft_toRightOf="@id/iv_avatar1"
         app:layout_constraintTop_toTopOf="@id/iv_avatar1"
@@ -91,4 +191,15 @@
         app:layout_constraintLeft_toRightOf="@id/text2"
         app:layout_constraintTop_toBottomOf="@id/iv_avatar1"
         app:layout_constraintRight_toRightOf="parent"/>
+    <!--5. 宽高比-->
+    <View
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="#F0F00F"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:2"
+        android:id="@+id/view2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
